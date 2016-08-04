@@ -1,0 +1,20 @@
+/*
+Theme Name: Newton
+Description: Used to style the TinyMCE editor.
+*/
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+@import "typography/typography";
+
+@import "elements/elements";
+
+@import "media/media";
+
+@import "site/primary/post-formats";
+
+body {
+	max-width: $size__content;
+	background-color: white;
+}

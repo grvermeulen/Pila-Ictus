@@ -1,0 +1,111 @@
+/* Time for some padding. */
+.site-branding,
+.site-info,
+.menu,
+.nav-links,
+.author-info,
+.comment-list,
+.no-comments,
+.comment-respond,
+.comments-title,
+.page-header,
+.page-content,
+.entry-summary {
+	padding: 0 15px;
+}
+.widget-area,
+.widget {
+	padding: 0 7.5px;
+}
+
+/* And some margin. */
+.entry-header,
+.entry-content,
+.entry-footer,
+.divider {
+	margin: 0 15px;
+}
+
+article.post,
+article.page {
+	padding-top: 24px;
+	padding-top: 1.5rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.5rem;
+}
+
+.entry-header,
+.post-thumbnail,
+.page-header {
+	padding-bottom: 1.5rem;
+}
+
+.entry-footer {
+	padding-bottom: 1.0rem;
+}
+
+article.post.has-thumbnail,
+article.page.has-thumbnail {
+	padding-top: 0;
+}
+
+@media (min-width: $breakpoint-small) {
+	/* A little more padding. */
+	.site-branding,
+	.site-info,
+	.menu,
+	.nav-links,
+	.author-info,
+	.comment-list,
+	.no-comments,
+	.comment-respond,
+	.comments-title,
+	.page-header,
+	.page-content,
+	.entry-summary {
+		padding: 0 25px;
+	}
+	.widget-area,
+	.widget {
+		padding: 0 12.5px;
+	}
+
+	/* And a little more margin. */
+	.entry-header,
+	.entry-content,
+	.entry-footer,
+	.divider {
+		margin: 0 25px;
+	}
+}
+
+@media (min-width: $breakpoint-medium) {
+	/* And a little more padding. */
+	.site-branding,
+	.site-info,
+	.nav-links,
+	.author-info,
+	.comment-list,
+	.no-comments,
+	.comment-respond,
+	.comments-title,
+	.page-header,
+	.page-content,
+	.entry-summary {
+		padding: 0 30px;
+	}
+	.main-navigation,
+	.widget-area,
+	.widget,
+	.menu {
+		padding: 0 15px;
+	}
+
+	/* And a some more margin. */
+	.entry-header,
+	.entry-content,
+	.entry-footer,
+	.divider {
+		margin: 0 30px;
+	}
+}

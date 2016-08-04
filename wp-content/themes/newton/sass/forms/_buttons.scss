@@ -1,0 +1,21 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: white;
+	border: 0;
+	border-radius: 3px;
+	transition: 0.25s;
+	background: $color__background-button;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	
+	&:hover,
+	&:active,
+	&:focus, {
+		background: $color__background-button-hover;
+	}
+	&:focus {
+		outline: $color__outline;
+	}
+}

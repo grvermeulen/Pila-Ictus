@@ -1,0 +1,60 @@
+/* The bones of the site. (Mobile first.) */
+#masthead,
+#content,
+#colophon {
+	width: 100%;
+}
+#page {
+	max-width: $size__content;
+	margin: 0 auto;
+}
+
+/* Now add a few background colors */
+#masthead,
+#colophon {
+	background: $color__background-sidebar;
+}
+#content {
+	background: $color__background-content;
+}
+
+/* And a little pinch of flexbox. */
+#page {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: $breakpoint-medium) {
+	/* Move the header to the left. */
+	#page {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 100%;
+	}
+	#masthead {
+		max-width: $size__sidebar;
+	}
+	#content {
+		max-width: $size__content;
+	}
+
+	/* And hide the footer. */
+	#colophon {
+		display: none;
+	}
+}
+
+@media (min-width: $breakpoint-large) {
+	/* Reveal the footer and force .site-info to the bottom. */
+	#colophon {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;;
+		max-width: $size__sidebar;
+	}
+}
+
+/*--------------------------------------------------------------
+## Global styles
+--------------------------------------------------------------*/
+@import "layout/global-styles";

@@ -1,0 +1,66 @@
+// Most used colors.
+$color-one: #fff; // White.
+$color-two: #2e456d; // Blue.
+$color-three: #253757; // Dark blue.
+$color-four: #1c2a43; // Darkest blue.
+$color-five: #b2cce5; // Light blue.
+$color-six: #e4f1fe; // Lightest blue.
+
+
+$color__background-body: #202020;
+$color__background-content: $color-one;
+$color__background-sidebar: $color-two;
+$color__background-widgets: $color-three;
+$color__background-menu: $color-four;
+$color__background-menu-toggle: #303030;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__background-button: $color-two;
+$color__background-button-hover: $color-four;
+$color__background-pagination: $color-four;
+$color__background-site-logo: $color-three;
+$color__background-site-logo-hover: $color-four;
+$color__background-blockquote: $color-six;
+$color__background-comments: rgba(48, 42, 67, 0.05);
+$color__background-comments-depth: rgba(48, 42, 67, 0.05);
+$color__background-quote: $color-three;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #2a7ab0;
+$color__link-visited: #2a7ab0;
+$color__link-hover: $color-two;
+$color__link-widget: $color-five;
+$color__link-widget-visited: $color-five;
+$color__link-widget-hover: $color-six;
+$color__link-menu: $color-five;
+$color__link-menu-visited: $color-five;
+$color__link-menu-hover: $color-six;
+$color__text-main: #202020;
+$color__text-widget: $color-six;
+$color__text-quote-post-format: $color-one;
+$color__outline: $color-six dotted thin;
+
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+$color__border-quote: $color-three;
+$color__border-menu: $color-two;
+$color__border-widgets: $color-two;
+$color__border-articles: $color-four;
+$color__border-comments: $color-four;
+
+$color__border-table: $color-four;
+$color__background-header-table: $color-two;
+$color__background-even-table: $color-six;
+$color__header-table: $color-one;
+$color__background-header-table-widgets: $color-four;
+$color__background-even-table-widgets: $color-two;
+$color__border-search-page-form: #303030;
+
+$color__bullets-sidebar: $color-six;
+$color__button-menu-lines: $color-one;
+$color__button-sub-menu-lines: $color-one;
+$color__button-sub-menu-background: $color-two;

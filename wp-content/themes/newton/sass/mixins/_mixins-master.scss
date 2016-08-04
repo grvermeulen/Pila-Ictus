@@ -1,0 +1,37 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Max width with rem and px fallback.
+@mixin max-width($sizeValue: 80) {
+	max-width: ($sizeValue * 16) * 1px;
+	max-width: $sizeValue * 1rem;
+}
+
+// Site width and center
+@mixin site-width-mobile($siteWidth: $size__site-width-mobile) {
+	width: ($siteWidth * 16) * 1px;
+	width: $siteWidth * 1rem;
+	max-width: 100%;
+	margin: 0 auto;
+}

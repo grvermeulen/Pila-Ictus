@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__headings;
+}
+
+h1 {
+	font-size: 2.25em;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+	line-height: 1.25;
+}
+h5 {
+	font-size: 1.1em;
+	line-height: 1.25;
+}
+h6 {
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0.67em 0;
+}
+
+h1.site-title {
+	text-align: center;
+	a {
+	color: white;
+	text-decoration: none;
+	transition: 0.25s;
+		&:hover {
+			text-decoration: underline;
+			color: $color__link-widget-hover;
+		}
+	}
+}
+
+h2.site-description {
+	color: #dadfe1;
+	font-style: italic;
+	text-align: center;
+	@include font-size(1.2);
+}
+
+h1.entry-title {
+	margin: 0;
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+h1.widget-title {
+	font-size: 175%;
+}
+
+h2.comments-title {
+	margin: 0;
+}

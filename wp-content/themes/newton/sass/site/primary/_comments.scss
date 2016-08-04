@@ -1,0 +1,80 @@
+.comments-area {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+.comment-list,
+.comment-respond,
+.comment-title-reply small,
+.form-allowed-tags code,
+.form-submit input {
+	@include font-size( 0.875 );
+}
+.comment-list {
+	margin: 0;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	list-style: none;
+}
+.comment-list .children {
+	margin-left: 1.5em;
+}
+.comment-body {
+	padding: 1.5em 0;
+}
+.children .comment-body {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.comment-meta {
+	min-height: 48px;
+	margin-bottom: 0.75em;
+}
+
+.comment-author {
+	.avatar {
+		float: left;
+		margin-right: 12px;
+	}
+}
+.children {
+	list-style: none;
+}
+.depth-2 {
+	background: $color__background-comments;
+}
+.depth-3,
+.depth-4,
+.depth-5 {
+	background: $color__background-comments-depth;
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.pingback .comment-body {
+	padding: 0.5em;
+}
+
+.bypostauthor {
+	background: transparent;
+}
+
+p.no-comments {
+	margin: 1.5em 0;
+}
+p.comment-awaiting-moderation {
+	margin-top: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+h3.comment-reply-title {
+	small {
+		font-family: $font__main;
+	}
+}
+
+#comment-nav-above {
+	padding-top: 0;
+	margin-bottom: 1.5em;
+}

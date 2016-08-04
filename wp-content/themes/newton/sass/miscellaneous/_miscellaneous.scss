@@ -1,0 +1,164 @@
+/* Font rendering fix. */
+.site-branding,
+.widget-title {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+
+/* Add some margin to Jetpack video. */
+.jetpack-video-wrapper {
+	margin-bottom: 1.5em;
+}
+
+/* Selection style. */
+::selection {
+	color: #ffffff;
+	background: #202020;
+}
+
+/* Hide page item. */
+li.page_item {
+	//display: none;
+}
+
+/* Center Infinite Scroll loader. */
+.infinite-loader {
+	margin: 1.5em auto;
+	.spinner {
+		left: 50%!important;
+	}
+}
+
+/*--------------------------------------------------------------
+## Site branding and site info.
+--------------------------------------------------------------*/
+
+/* Site branding. */
+.site-branding {
+	margin-top: 32px;
+	margin-top: 2rem;
+	text-align: center;
+}
+.site-logo {
+	height: 150px;
+	width: 150px;
+	transition: 0.25s;
+	margin-bottom: 24px;
+	margin-bottom: 1rem;
+	box-sizing: content-box;
+	border-radius: 50%;
+	border: 5px solid $color__background-site-logo;
+}
+.site-title {
+	margin: 0 0 16px 0;
+	margin: 0 0 0.75rem 0;
+}
+.site-description {
+	margin: 0;
+}
+.site-logo:hover {
+	border: 5px solid $color__background-site-logo-hover;
+}
+a.site-logo-link:focus {
+	outline: $color__outline;
+	min-height: 160px;
+}
+
+/* Site-info. */
+.site-info {
+	align-self: flex-end;
+	width: 100%;
+	margin: 24px 0;
+	margin: 1.5rem 0;
+	font-size: 14px;
+	font-size: 0.875rem;
+	text-align: center;
+	color: $color__text-widget;
+}
+.site-info-top,
+.site-info-bottom,
+.site-info a[href="http://michaelvandenberg.com/"] { 
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Borders.
+--------------------------------------------------------------*/
+
+/* Borders articles. */
+#main article.post, //:not(:last-child),
+.search .type-page, //:not(:last-child),
+.post-navigation,
+.author-info,
+.comment-list,
+.comment-navigation,
+.page-header {
+	border-bottom: 4px solid $color__border-articles;
+}
+
+/* Borders pages. */
+.page .comments-area {
+	border-top: 4px solid $color__border-articles;
+}
+
+/* Borders menu. */
+li.menu-item:not(:first-child),
+ul.sub-menu li.menu-item {
+	border-top: 1px solid $color__border-menu;
+}
+
+/* Borders widgets. */
+.widget ul li:not(:first-child),
+ul.children li {
+	border-top: 1px solid $color__border-widgets;
+}
+
+.divider {
+	height: 4px;
+	width: 80px;
+	margin-bottom: 1.5em;
+	background: $color__border-articles;
+}
+
+/* Hide the dividers. */
+.divider {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Back to top.
+--------------------------------------------------------------*/
+
+/* Back to top. */
+.back-to-top {
+	position: fixed;
+	right: 2.0%;
+	bottom: -7.5%;
+	padding: 5px;
+	color: white;
+	opacity: 0.25;
+	border-radius: 4px;
+	visibility: hidden;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+	background: $color__background-body;
+	span {
+		color: white;
+		font-size: 24px;
+	}
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+	&:focus {
+		outline: $color__outline;
+	}
+}
+.show-back-to-top {
+	display: block;
+	bottom: 2.5%;
+	visibility: visible;
+}

@@ -1,0 +1,56 @@
+/* Post format: quote. */
+.format-quote {
+	color: $color__text-quote-post-format;
+	background: $color__background-quote;
+
+	a {
+		color: $color__link-widget;
+
+		&:hover {
+			color: $color__link-widget-hover;
+		}
+	}
+
+	blockquote {
+		quotes: "" "";
+		margin: 0 0 1.0em 0;
+		padding: 0;
+		background: none;
+		border-left: none;
+		border-radius: 0;
+		font-size: 32px;
+		font-size: 2rem;
+		font-weight: 400;
+		font-family: $font__headings;
+
+		&:before,
+		&:after {
+			content: "";
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		cite {
+			float: right;
+			font-size: 16px;
+			font-size: 1rem;
+			font-style: italic;
+			font-weight: bold;
+			font-family: $font__main;
+			margin-top: 1rem;
+		}
+	}
+}
+
+/* Post format: image */
+body:not(.single) .format-image.has-post-thumbnail {
+	padding-bottom: 0;
+	
+	.post-thumbnail {
+		padding-bottom: 0
+	}
+}
+
+

@@ -1,0 +1,177 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	width: 100%;
+	margin: 2.5rem 0 0 0;
+	background: $color__background-menu;
+
+	ul {
+		list-style: none;
+		&.menu {
+			display: none;
+			margin: 0;
+		}
+		&.sub-menu {
+			display: none;
+			margin: 0.5rem 0 0 0;
+			padding: 0 0 0 2rem;
+			font-size: 14px;
+			font-size: 0.875rem;
+		}
+	}
+
+	li {
+		padding: 0.5rem 0;
+		.menu-item-description {
+			font-size: 14px;
+			font-size: 0.875rem;
+			font-style: italic;
+			font-weight: 300;
+		}
+	}
+	.current-menu-item a {
+		color: $color__link-widget-hover;
+	}
+}
+
+/* Menu toggle. */
+.menu-toggle {
+	display: inline-block;
+	width: 100%;
+	padding: 15px 15px;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	z-index: 5000;
+	background-color: $color__background-menu-toggle;
+	.menu-text {
+		float: left;
+		opacity: 0.8;
+		transition: 0.25s;
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+	.lines {
+		display: block;
+		position: relative;
+		float: right;
+		width: 15px;
+		height: 2px;
+		bottom: -5px;
+		transition: 0.25s;
+		opacity: 0.8;
+		background-color: $color__button-menu-lines;
+	}
+	.lines:before,
+	.lines:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 15px;
+		height: 2px;
+		transition: 0.125s;
+		background-color: $color__button-menu-lines;
+	}
+	.lines:before {
+		top: -5px;
+	}
+	.lines:after {
+		top: 5px;
+	}
+	&:hover {
+		.lines,
+		.lines:before,
+		.lines:after,
+		.menu-text {
+			transition: 0.25s;
+			opacity: 1;
+		}
+	}
+	&:focus {
+		border-color: transparent;
+		box-shadow: none;
+	}
+	&:hover,
+	&:focus {
+		background-color: $color__background-menu-toggle;
+	}
+}
+.toggled .menu-toggle {
+	.menu-text {
+		color: white;
+	}
+	.lines {
+		bottom: -6px;
+		background-color: transparent;
+	}
+	.lines:before {
+		transform: rotate(-45deg);
+		top: 0;
+	}
+	.lines:after {
+		transform: rotate(45deg);
+		top: 0;
+	}
+}
+
+/* Dropdown menu toggle. */
+.dropdown-toggle {
+	float: right;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: 0;
+	transition: 0.25s;
+	box-sizing: border-box;
+	background: transparent;
+	&:hover,
+	&:focus {
+		background: $color__button-sub-menu-background;
+	}
+	&:after {
+		display: inline-block;
+		position: relative;
+		top: 0;
+		left: 0;
+		font-family: 'Genericons';
+		font-size: 16px;
+		line-height: 24px;
+		width: 24px;
+		content: '\f431';
+		opacity: 0.8;
+		transition: 0.25s;
+		color: $color__button-sub-menu-lines;
+	}
+	&:hover:after,
+	&:focus:after {
+		opacity: 1;
+	}
+	&.toggle-on:after {
+		content: '\f432';
+	}
+}
+
+/* Hide dropdown toggle for menu level depth more than three. */
+ul.sub-menu ul.sub-menu li.menu-item button.dropdown-toggle {
+	display: none;
+}
+
+@media (min-width: $breakpoint-small) {
+	.menu-toggle {
+		padding: 15px 25px;
+	}
+}
+
+@media (min-width: $breakpoint-medium) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation {
+		margin-bottom: 2.5rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.main-navigation ul.menu {
+		display: block!important;
+	}
+}

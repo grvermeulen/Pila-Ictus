@@ -1,0 +1,52 @@
+a {
+	transition: 0.25s;
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.widget-area a,
+.site-info a {
+	text-decoration: none;
+	color: $color__link-widget;
+
+	&:visited {
+		color: $color__link-widget-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+		color: $color__link-widget-hover;
+	}
+}
+
+.main-navigation a {
+	text-decoration: none;
+	color: $color__link-menu;
+
+	&:visited {
+		color: $color__link-menu-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+		color: $color__link-menu-hover;
+	}
+}

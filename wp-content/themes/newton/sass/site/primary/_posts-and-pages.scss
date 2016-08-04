@@ -1,0 +1,71 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.entry-header,
+.entry-footer {
+	position: relative;
+}
+
+.entry-date {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+/* Entry-meta and entry-comments. */
+.entry-meta,
+.entry-footer,
+.comment-metadata {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.posted-on,
+.byline,
+.comment-metadata a {
+	font-style: italic;
+}
+.entry-footer,
+.entry-comments {
+	display: flex;
+}
+.entry-footer {
+	justify-content: space-between;
+}
+.entry-comments {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.post-author,
+.cat-links,
+.tags-links {
+	display: block;
+}
+.comments-link {
+	margin-left: 1.5em;
+}
+.page .entry-footer {
+	display: none;
+}
+
+.more-link {
+	display: block;
+	margin: 1.5em 0;
+}
+
+.no-results .page-content {
+	padding-top: 1.5em;
+}
